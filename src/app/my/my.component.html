@@ -1,0 +1,16 @@
+<h2>
+    <strong>
+        {{someName}}
+    </strong>
+</h2>
+<button (click)="getNewName()">Get Name!</button>
+
+<p>{{getMyName}}</p>
+
+
+<input type="text" (keyup.enter)="getValueFromInput($event)">
+<button (click)="getCurentStatus()">Add value</button>
+<p *ngIf="!getStatus; else sucsesValue">Value is not added!</p>
+<ng-template #sucsesValue>
+    <p>Value is added! values is - {{valueFromInput}}</p>
+</ng-template>
