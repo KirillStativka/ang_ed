@@ -20,6 +20,10 @@ export class CarComponent {
         console.log(item.length > 4 ? true : false);
         return item.length > 4 ? true : false;
     }
+    result: any = '';
+    number: any = 0;
+    value1: string;
+    value2: string;
     constructor() {
         let itemsT = ['Ford', 'Mersedes', 'Audi', 'Bmw', 'Zapar', 'sliva'];
         let test = document.getElementById('test_div');
@@ -44,17 +48,21 @@ export class CarComponent {
         testTar.id = 'newId';
         console.log(testTar.id);
         // square Digits number
-        function squareDigits(num) {
-            const strNum: any = String(num);
-            let newNum: any = '';
 
-            for (let i = 0; i <= strNum.length - 1; i++) {
-                newNum += strNum[i] * strNum[i];
-            }
-            console.log(Number(newNum));
-        }
-        squareDigits(9119);
+        // function squareDigits(num) {
+        //     const strNum: any = String(num);
+        //     let newNum: any = '';
+        //     let newVariable : any = document.getElementById('result');
+        //     for (let i = 0; i <= strNum.length - 1; i++) {
+        //         newNum += strNum[i] * strNum[i];
+        //     }
+        //   let some: any =  Number(newNum);
+        //     newVariable.some.innerText ;
+        // }
+        // squareDigits(9119);
     }
 
-
+    search(){
+        console.log(`value1: ${this.value1} \n value2: ${this.value2}`);
+    }
 }
