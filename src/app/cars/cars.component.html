@@ -1,7 +1,9 @@
-<ul id="some_id">
-    <li *ngFor="let date of dates; let idx = index">
-        <div>
-            <b>{{idx + 1}}</b> - {{date | date: 'short'}}
-        </div>
-    </li>
+<input type="text" class="form-control" required [(ngModel)]="carName">
+<input type="number" class="form-control" [(ngModel)]="carYear">
+<button class="btn btn-primary" (click)="addCar()" >Добавить машину</button>
+
+<hr>
+<ul id="error">
+    <app-car *ngFor="let car of cars" [carItem]="car"></app-car>
 </ul>
+
