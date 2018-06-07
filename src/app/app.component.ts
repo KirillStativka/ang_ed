@@ -8,6 +8,7 @@ import {Component} from '@angular/core';
 export class AppComponent {
     title = 'app';
     description = 'This is my app!';
+    cars = ['Ford', 'Audi', 'BMV','Chevrolet'];
 
     getTest() {
         return 'clear';
@@ -16,6 +17,7 @@ export class AppComponent {
     getVal() {
         return '20000';
     }
+
     x: number = 2;
     y: number = 12;
     myAdd = function (x, y) {
