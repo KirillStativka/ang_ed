@@ -1,0 +1,19 @@
+<p>Model: Ford, Years : 2011</p>
+
+<ul>
+    <li *ngFor="let item of items; let indx = index ">
+        <div [ngStyle]="{backgroundColor: (indx + 1) % 2 === 0 ? 'red ' : '#faf', 'color':'white','padding':'20px' }"
+             [ngClass]="{'big-text': setBigText(item)}">
+            <strong>{{indx + 1}}</strong> - <i>{{item}}</i>
+        </div>
+    </li>
+</ul>
+<div class="app-car">
+    <div class="some_div">
+        <p>{{setBigText}}</p>
+    </div>
+</div>
+
+<div class="item_holder">
+    
+</div>
