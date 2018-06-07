@@ -1,0 +1,7 @@
+<ul id="some_id">
+    <li *ngFor="let date of dates; let idx = index">
+        <div>
+            <b>{{idx + 1}}</b> - {{date | date: 'short'}}
+        </div>
+    </li>
+</ul>
