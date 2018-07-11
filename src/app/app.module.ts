@@ -9,6 +9,8 @@ import {AppComponent} from './app.component';
 import {MyComponent} from './my/my.component';
 import { CarComponent } from './car/car.component';
 import { CarsComponent } from './cars/cars.component';
+import { AddCarComponent } from './add-car/add-car.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { CarsComponent } from './cars/cars.component';
         AppComponent,
         MyComponent,
         CarComponent,
-        CarsComponent
+        CarsComponent,
+        AddCarComponent,
+        UserComponent
     ],
     imports: [
         BrowserModule,
